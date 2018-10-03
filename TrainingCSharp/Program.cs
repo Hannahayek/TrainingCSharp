@@ -6,7 +6,33 @@ namespace TrainingCSharp
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("{0} {1}",float.MinValue,float.MaxValue);
+            //var a = 10;
+            //var b = 3;
+            byte number = 255;
+
+            number += 2;
+
+            Console.WriteLine(number);
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Console.WriteLine("{0} {1}",float.MinValue,float.MaxValue);
 
             //int i = 1;
             //byte b = (byte)i;
@@ -16,22 +42,22 @@ namespace TrainingCSharp
             //Console.WriteLine(i);
 
 
-            try
-            {
-                var number = "12345";
-                byte b = Convert.ToByte(number);
-                Console.WriteLine(b);
+          //  try
+            //{
+              //  var number = "12345";
+              //  byte b = Convert.ToByte(number);
+              //  Console.WriteLine(b);
+ 
+           // }
+//catch (Exception)
+           // {
+
+              //  Console.WriteLine("number not converted");
+          //  }
+           // Console.ReadLine();
+      //  }
 
 
 
-              
-            }
-            catch (Exception)
-            {
+    //}
 
-                Console.WriteLine("number not converted");
-            }
-            Console.ReadLine();
-        }
-    }
-}
