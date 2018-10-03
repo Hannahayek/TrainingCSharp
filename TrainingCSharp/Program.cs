@@ -1,4 +1,4 @@
-using System;
+using TrainingCSharp.Math;
 
 namespace TrainingCSharp
 {
@@ -6,14 +6,15 @@ namespace TrainingCSharp
     {
         static void Main(string[] args)
         {
-            //var a = 10;
-            //var b = 3;
-            byte number = 255;
+      var john=new Person();
 
-            number += 2;
+            john.FirstName = "Hanna";
+            john.LastName = "hayek";
+            john.introduce();
 
-            Console.WriteLine(number);
-            Console.ReadLine();
+            Calculater calculater=new Calculater();
+
+            var result = calculater.Add(10, 11);
         }
     }
 }
