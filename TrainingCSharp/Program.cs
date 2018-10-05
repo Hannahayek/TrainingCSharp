@@ -44,6 +44,42 @@ namespace TrainingCSharp
             Console.Read();
     }
 
+        class StringDemo
+        {
+            static void Main(string[] args)
+            {
+                var FirstName = "Hanna";
+                var LastName = "Hayek";
+
+                var fullname = FirstName + " " + LastName;
+
+                var Fullname = string.Format("My name is {0},{1} ", FirstName, LastName);
+                var names = new string[3] {"hanna", "munir", "hayek"};
+
+                var formatename = string.Join(",", names);
+
+                var text = "hi John i am looking\nlook into the following paths\nc:\\folder1\\folder3";
+                //to fix below issue with text and void // 
+                var text1= @"hi John i am looking
+look into the following paths
+c:\folder1\folder3";
+                //Console.WriteLine(text);
+                Console.WriteLine(text1);
+                Console.Read();
+            }
+
+
+
+
+
+
+
+
+
+
+
+        }
+
     }
 }
 
