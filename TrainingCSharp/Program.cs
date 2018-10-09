@@ -22,27 +22,27 @@ namespace TrainingCSharp
 
     class ArraysProgram
     {
-    static void Main(string[] args)
-    {
+        static void Main(string[] args)
+        {
 
-        var numbers = new int[3];
-        numbers[0] = 1;
-        Console.WriteLine(numbers[0]);
-        Console.WriteLine(numbers[1]);
-        Console.WriteLine(numbers[2]);
+            var numbers = new int[3];
+            numbers[0] = 1;
+            Console.WriteLine(numbers[0]);
+            Console.WriteLine(numbers[1]);
+            Console.WriteLine(numbers[2]);
 
-        var flags = new bool[3];
-        flags[0] = true;
-        Console.WriteLine(flags[0]);
-        Console.WriteLine(flags[1]);
-        Console.WriteLine(flags[2]);
+            var flags = new bool[3];
+            flags[0] = true;
+            Console.WriteLine(flags[0]);
+            Console.WriteLine(flags[1]);
+            Console.WriteLine(flags[2]);
 
-        var names=new string[3]{"jack","hanna","batal"};
-        Console.WriteLine(names[0]);
-        Console.WriteLine(names[1]);
-        Console.WriteLine(names[2]);
+            var names = new string[3] { "jack", "hanna", "batal" };
+            Console.WriteLine(names[0]);
+            Console.WriteLine(names[1]);
+            Console.WriteLine(names[2]);
             Console.Read();
-    }
+        }
 
         class StringDemo
         {
@@ -54,13 +54,13 @@ namespace TrainingCSharp
                 var fullname = FirstName + " " + LastName;
 
                 var Fullname = string.Format("My name is {0},{1} ", FirstName, LastName);
-                var names = new string[3] {"hanna", "munir", "hayek"};
+                var names = new string[3] { "hanna", "munir", "hayek" };
 
                 var formatename = string.Join(",", names);
 
                 var text = "hi John i am looking\nlook into the following paths\nc:\\folder1\\folder3";
                 //to fix below issue with text and void // 
-                var text1= @"hi John i am looking
+                var text1 = @"hi John i am looking
 look into the following paths
 c:\folder1\folder3";
                 //Console.WriteLine(text);
@@ -85,9 +85,9 @@ c:\folder1\folder3";
         {
             public enum ShippingMethod
             {
-                RegularAirMail =1,
-                RegisteredAirMail=2,
-                Express =3
+                RegularAirMail = 1,
+                RegisteredAirMail = 2,
+                Express = 3
             }
             static void Main(string[] args)
             {
@@ -110,6 +110,27 @@ c:\folder1\folder3";
                 Console.WriteLine(shippingmethod);
                 Console.ReadLine();
             }
+        }
+
+        class ReferenceTypesDemo
+        {
+            static void Main(string[] args)
+            {
+
+                var a = 10;
+                var b = a;
+                b++;
+                // 0 and 1 are place holders
+                Console.WriteLine(string.Format("a is {0}, b is {1}",a,b));
+
+
+                var array1 = new int[3] { 1, 2, 3 };
+                var array2 = array1;
+                array2[0] = 0;
+                Console.WriteLine(string.Format("array1[0]= {0} ,array2[0] = {1}",array1[0],array2[0]));
+                Console.ReadLine();
+            }
+
         }
     }
 }

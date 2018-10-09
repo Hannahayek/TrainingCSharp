@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TrainingCSharp.ArraysProgram.enumDemo</StartupObject>
+    <StartupObject>TrainingCSharp.ArraysProgram.ReferenceTypesDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
