@@ -132,6 +132,41 @@ c:\folder1\folder3";
             }
 
         }
+
+
+        public class Person
+        {
+            public int Age;
+        }
+        class ReferenceTypesDemo2
+        {
+
+            static void Main(string[] args)
+            {
+
+                var number = 1;
+                Increment(number);
+                //out put will be 1, 2 number are in different memory locations
+                Console.WriteLine(number);
+
+                var person = new Person { Age = 20 };
+                MakeOld(person);
+                Console.WriteLine(person.Age);
+               
+                Console.ReadLine();
+            }
+            public static void Increment(int number)
+            {
+                number += 10;
+            }
+
+            public static void MakeOld(Person person)
+            {
+                person.Age += 10;
+
+            }
+
+        }
     }
 }
 
