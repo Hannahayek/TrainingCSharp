@@ -80,6 +80,37 @@ c:\folder1\folder3";
 
         }
 
+
+        class enumDemo
+        {
+            public enum ShippingMethod
+            {
+                RegularAirMail =1,
+                RegisteredAirMail=2,
+                Express =3
+            }
+            static void Main(string[] args)
+            {
+                //Convert string to in
+                var method = ShippingMethod.Express;
+                Console.WriteLine((int)method);
+
+
+                var methodID = 3;
+                //convert int to string 
+                Console.WriteLine((ShippingMethod)methodID);
+                Console.WriteLine(method.ToString());
+
+
+                var methodName = "Express";
+
+                //conver string to Enum 
+                var shippingmethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+
+                Console.WriteLine(shippingmethod);
+                Console.ReadLine();
+            }
+        }
     }
 }
 
