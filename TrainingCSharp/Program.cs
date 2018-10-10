@@ -268,7 +268,11 @@ class DemoIfElse
 
 
     }
-
+    /// <summary>
+    /// Write a program and ask the user to enter a number. The number should be between 1 to 10. If the user enters 
+    /// a valid number, display "Valid" on the console. Otherwise, display "Invalid". (This logic is used a lot in 
+    /// applications where values entered into input boxes need to be validated.)
+    /// </summary>
 
     class excersice1
     {
@@ -293,7 +297,9 @@ class DemoIfElse
         }
 
 }
-
+    /// <summary>
+    /// Write a program which takes two numbers from the console and displays the maximum of the two.
+    /// </summary>
     class excersice2
     {
 
@@ -304,21 +310,96 @@ class DemoIfElse
             var input1 = Console.ReadLine();
             int number1 = Convert.ToInt32(input1);
 
-            Console.WriteLine("Enter first number");
+            Console.WriteLine("Enter second number");
 
             var input2 = Console.ReadLine();
             int number2 = Convert.ToInt32(input2);
 
-
-            var highest = Math.Max(number1, number2);
-            Console.WriteLine();
-
+            var max = (number2 > number1) ? number2 : number1;
+         
+            Console.WriteLine(max);
+            Console.ReadLine();
         }
         }
+    /// <summary>
+    /// Write a program and ask the user to enter the width and height of an image. Then tell if the image 
+    /// is landscape or portrait.
+    /// </summary>
+    class excersice3
+    {
 
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter width number");
 
+            var input1 = Console.ReadLine();
+            int width = Convert.ToInt32(input1);
 
+            Console.WriteLine("Enter height number");
+
+            var input2 = Console.ReadLine();
+            int height = Convert.ToInt32(input2);
+
+            var max = (width > height) ? Orientation.lanscape : Orientation.portrait;
+
+            Console.WriteLine(max);
+            Console.ReadLine();
+        }
+
+        public enum Orientation
+        {
+            lanscape,
+            portrait
+        }
     }
+    /// <summary>
+    /// Your job is to write a program for a speed camera. For simplicity, ignore the details such as camera, sensors, 
+    /// etc and focus purely on the logic. Write a program that asks the user to enter the speed limit. Once set, 
+    /// the program asks for the speed of a car. If the user enters a value less than the speed limit, program should 
+    /// display Ok on the console. If the value is above the speed limit, the program should calculate the number of 
+    /// demerit points. For every 5km/hr above the speed limit, 1 demerit points should be incurred and displayed on 
+    /// the console. If the number of demerit points is above 12, the program should display License Suspended.
+    /// </summary>
+    class excersice4
+    {
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter speed limit");
+
+            var input1 = Console.ReadLine();
+            int speedlimit = Convert.ToInt32(input1);
+
+            Console.WriteLine("Enter car speed");
+
+            var input2 = Console.ReadLine();
+            int carspeed = Convert.ToInt32(input2);
+
+
+
+            if (speedlimit > carspeed)
+            {
+                Console.WriteLine("ok");
+            }
+            else
+            {
+                var extra = carspeed - speedlimit;
+                var demrits = (extra / 5);
+                if (demrits > 12)
+                {
+                    Console.WriteLine("license suspended you demertic ="+ demrits);
+                }
+                else
+                {
+                    Console.WriteLine("your demerits less than 12="+demrits);
+                }
+            }
+            Console.ReadLine();
+        }
+
+     
+    }
+}
 
 
 
@@ -338,30 +419,30 @@ class DemoIfElse
 
 //Console.WriteLine("{0} {1}",float.MinValue,float.MaxValue);
 
-            //int i = 1;
-            //byte b = (byte)i;
+//int i = 1;
+//byte b = (byte)i;
 
-            //var number = "12345";
-            //int i = Convert.ToInt32(number);
-            //Console.WriteLine(i);
+//var number = "12345";
+//int i = Convert.ToInt32(number);
+//Console.WriteLine(i);
 
 
-          //  try
-            //{
-              //  var number = "12345";
-              //  byte b = Convert.ToByte(number);
-              //  Console.WriteLine(b);
- 
-           // }
+//  try
+//{
+//  var number = "12345";
+//  byte b = Convert.ToByte(number);
+//  Console.WriteLine(b);
+
+// }
 //catch (Exception)
-           // {
+// {
 
-              //  Console.WriteLine("number not converted");
-          //  }
-           // Console.ReadLine();
-      //  }
+//  Console.WriteLine("number not converted");
+//  }
+// Console.ReadLine();
+//  }
 
 
 
-    //}
+//}
 
