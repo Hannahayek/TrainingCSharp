@@ -221,7 +221,49 @@ class DemoIfElse
 
 
 
+        class DemoSwitch
+        {
+            public enum Season
+            {
+                Spring,
+                Summer,
+                Winter,
+                Autumn
+            }
+            static void Main(string[] args)
+            {
 
+                var season = Season.Autumn;
+
+                switch(season)
+                {
+                    case Season.Autumn:
+                        Console.WriteLine("it is autumn very sweet season");
+                        break;
+
+                    case Season.Summer:
+                        Console.WriteLine("go swim, what you are waiting for");
+                        break;
+
+
+                    case Season.Spring:
+                    case Season.Winter:
+                        Console.WriteLine("Cold or Cool weather");
+                        break;
+
+                    default:
+                        Console.WriteLine("not understanding");
+                        break;
+
+                }
+               
+
+
+
+
+            }
+
+        }
 
 
 
