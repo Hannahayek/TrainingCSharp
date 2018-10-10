@@ -424,6 +424,29 @@ class DemoIfElse
                 }
             }
 
+            //var name = "hanna hayek";
+
+            //for (var i = 0; i < name.Length; i++)
+            //{
+            //    Console.WriteLine(name[i]);
+
+
+            //}
+
+            //foreach ( var charcter in name)
+            //{
+            //    Console.WriteLine(name);
+
+            //}
+
+            var number = new int[5]{1, 2, 3, 4, 5};
+
+
+            foreach (var numbers in number)
+            {
+                Console.WriteLine(numbers);
+            }
+
             Console.ReadLine();
 
 
