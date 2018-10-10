@@ -267,11 +267,58 @@ class DemoIfElse
 
 
 
+    }
+
+
+    class excersice1
+    {
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a number between 1 to 10");
+
+            var input = Console.ReadLine();
+            int number = Convert.ToInt32(input);
+
+            if (number > 1 && number < 10)
+            {
+                Console.WriteLine("is Valid");
+
+
+            }
+            else
+                Console.WriteLine("not Valid");
+
+            Console.ReadLine();
+        }
+
+}
+
+    class excersice2
+    {
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter first number");
+
+            var input1 = Console.ReadLine();
+            int number1 = Convert.ToInt32(input1);
+
+            Console.WriteLine("Enter first number");
+
+            var input2 = Console.ReadLine();
+            int number2 = Convert.ToInt32(input2);
+
+
+            var highest = Math.Max(number1, number2);
+            Console.WriteLine();
+
+        }
+        }
 
 
 
     }
-}
 
 
 
