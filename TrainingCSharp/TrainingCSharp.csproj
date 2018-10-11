@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TrainingCSharp.WhileLoops</StartupObject>
+    <StartupObject>TrainingCSharp.DemoRandomclass</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

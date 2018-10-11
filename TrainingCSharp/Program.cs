@@ -515,6 +515,36 @@ class DemoIfElse
 
     }
 
+
+    class DemoRandomclass
+    {
+
+        static void Main(string[] args)
+        {
+            const int passwordlength = 10;
+            //we created random password
+            //first we create array that can hold 10 places, then store the random chars in the array/then convert array to string
+            var random = new Random();
+            var buffer = new char[passwordlength];
+            for (int i = 0; i < passwordlength; i++)
+                //'a' internal represents number
+              buffer[i]=(char) ('a'+ random.Next(0, 26));
+
+            var password = new string(buffer);
+            Console.WriteLine(password);
+
+
+
+
+
+            Console.ReadLine();
+
+        }
+
+
+    }
+
+
 }
 
 
