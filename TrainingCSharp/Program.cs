@@ -1,4 +1,5 @@
 using System;
+using System.Dynamic;
 using TrainingCSharp.Math;
 
 namespace TrainingCSharp
@@ -7,13 +8,13 @@ namespace TrainingCSharp
     {
         static void Main(string[] args)
         {
-      var john=new Person();
+            var john = new Person();
 
             john.FirstName = "Hanna";
             john.LastName = "hayek";
             john.introduce();
 
-            Calculater calculater=new Calculater();
+            Calculater calculater = new Calculater();
 
             var result = calculater.Add(10, 11);
         }
@@ -37,7 +38,7 @@ namespace TrainingCSharp
             Console.WriteLine(flags[1]);
             Console.WriteLine(flags[2]);
 
-            var names = new string[3] { "jack", "hanna", "batal" };
+            var names = new string[3] {"jack", "hanna", "batal"};
             Console.WriteLine(names[0]);
             Console.WriteLine(names[1]);
             Console.WriteLine(names[2]);
@@ -54,7 +55,7 @@ namespace TrainingCSharp
                 var fullname = FirstName + " " + LastName;
 
                 var Fullname = string.Format("My name is {0},{1} ", FirstName, LastName);
-                var names = new string[3] { "hanna", "munir", "hayek" };
+                var names = new string[3] {"hanna", "munir", "hayek"};
 
                 var formatename = string.Join(",", names);
 
@@ -89,23 +90,24 @@ c:\folder1\folder3";
                 RegisteredAirMail = 2,
                 Express = 3
             }
+
             static void Main(string[] args)
             {
                 //Convert string to in
                 var method = ShippingMethod.Express;
-                Console.WriteLine((int)method);
+                Console.WriteLine((int) method);
 
 
                 var methodID = 3;
                 //convert int to string 
-                Console.WriteLine((ShippingMethod)methodID);
+                Console.WriteLine((ShippingMethod) methodID);
                 Console.WriteLine(method.ToString());
 
 
                 var methodName = "Express";
 
                 //conver string to Enum 
-                var shippingmethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+                var shippingmethod = (ShippingMethod) Enum.Parse(typeof(ShippingMethod), methodName);
 
                 Console.WriteLine(shippingmethod);
                 Console.ReadLine();
@@ -121,13 +123,13 @@ c:\folder1\folder3";
                 var b = a;
                 b++;
                 // 0 and 1 are place holders
-                Console.WriteLine(string.Format("a is {0}, b is {1}",a,b));
+                Console.WriteLine(string.Format("a is {0}, b is {1}", a, b));
 
 
-                var array1 = new int[3] { 1, 2, 3 };
+                var array1 = new int[3] {1, 2, 3};
                 var array2 = array1;
                 array2[0] = 0;
-                Console.WriteLine(string.Format("array1[0]= {0} ,array2[0] = {1}",array1[0],array2[0]));
+                Console.WriteLine(string.Format("array1[0]= {0} ,array2[0] = {1}", array1[0], array2[0]));
                 Console.ReadLine();
             }
 
@@ -138,6 +140,7 @@ c:\folder1\folder3";
         {
             public int Age;
         }
+
         class ReferenceTypesDemo2
         {
 
@@ -149,12 +152,13 @@ c:\folder1\folder3";
                 //out put will be 1, 2 number are in different memory locations
                 Console.WriteLine(number);
 
-                var person = new Person { Age = 20 };
+                var person = new Person {Age = 20};
                 MakeOld(person);
                 Console.WriteLine(person.Age);
-               
+
                 Console.ReadLine();
             }
+
             public static void Increment(int number)
             {
                 number += 10;
@@ -169,7 +173,7 @@ c:\folder1\folder3";
         }
 
 
-class DemoIfElse
+        class DemoIfElse
         {
 
             static void Main(string[] args)
@@ -217,7 +221,7 @@ class DemoIfElse
 
             }
 
-            }
+        }
 
 
 
@@ -230,12 +234,13 @@ class DemoIfElse
                 Winter,
                 Autumn
             }
+
             static void Main(string[] args)
             {
 
                 var season = Season.Autumn;
 
-                switch(season)
+                switch (season)
                 {
                     case Season.Autumn:
                         Console.WriteLine("it is autumn very sweet season");
@@ -256,7 +261,7 @@ class DemoIfElse
                         break;
 
                 }
-               
+
 
 
 
@@ -268,6 +273,7 @@ class DemoIfElse
 
 
     }
+
     /// <summary>
     /// Write a program and ask the user to enter a number. The number should be between 1 to 10. If the user enters 
     /// a valid number, display "Valid" on the console. Otherwise, display "Invalid". (This logic is used a lot in 
@@ -296,7 +302,8 @@ class DemoIfElse
             Console.ReadLine();
         }
 
-}
+    }
+
     /// <summary>
     /// Write a program which takes two numbers from the console and displays the maximum of the two.
     /// </summary>
@@ -316,11 +323,12 @@ class DemoIfElse
             int number2 = Convert.ToInt32(input2);
 
             var max = (number2 > number1) ? number2 : number1;
-         
+
             Console.WriteLine(max);
             Console.ReadLine();
         }
-        }
+    }
+
     /// <summary>
     /// Write a program and ask the user to enter the width and height of an image. Then tell if the image 
     /// is landscape or portrait.
@@ -352,6 +360,7 @@ class DemoIfElse
             portrait
         }
     }
+
     /// <summary>
     /// Your job is to write a program for a speed camera. For simplicity, ignore the details such as camera, sensors, 
     /// etc and focus purely on the logic. Write a program that asks the user to enter the speed limit. Once set, 
@@ -387,17 +396,18 @@ class DemoIfElse
                 var demrits = (extra / 5);
                 if (demrits > 12)
                 {
-                    Console.WriteLine("license suspended you demertic ="+ demrits);
+                    Console.WriteLine("license suspended you demertic =" + demrits);
                 }
                 else
                 {
-                    Console.WriteLine("your demerits less than 12="+demrits);
+                    Console.WriteLine("your demerits less than 12=" + demrits);
                 }
             }
+
             Console.ReadLine();
         }
 
-     
+
     }
 
     class DemoForLoops
@@ -413,7 +423,7 @@ class DemoIfElse
                     Console.WriteLine(i);
                 }
 
-                
+
             }
 
             for (var i = 10; i >= 0; i--)
@@ -439,7 +449,7 @@ class DemoIfElse
 
             //}
 
-            var number = new int[5]{1, 2, 3, 4, 5};
+            var number = new int[5] {1, 2, 3, 4, 5};
 
 
             foreach (var numbers in number)
@@ -528,7 +538,7 @@ class DemoIfElse
             var buffer = new char[passwordlength];
             for (int i = 0; i < passwordlength; i++)
                 //'a' internal represents number
-              buffer[i]=(char) ('a'+ random.Next(0, 26));
+                buffer[i] = (char) ('a' + random.Next(0, 26));
 
             var password = new string(buffer);
             Console.WriteLine(password);
@@ -544,8 +554,170 @@ class DemoIfElse
 
     }
 
+    /// 49 excersice 1
+    ///  <summary>
+    /// Write a program to count how many numbers between 1 and 100 are divisible by 3 with no remainder. 
+    /// Display the result on the console.
+    /// </summary>
+    class Excersice491
+    {
 
-}
+        static void Main(string[] args)
+        {
+
+            var count = 0;
+            for (var i = 1; i <= 100; i++)
+            {
+                if (i % 3 == 0)
+                    count++;
+            }
+
+            Console.WriteLine("There are {0} numbers divisible by 3 between 1 and 100.", count);
+
+            Console.ReadLine();
+        }
+
+    }
+
+    /// <summary>
+    /// Write a program and continuously ask the user to enter a number. The loop terminates when the user 
+    /// enters “ok". Calculate the sum of all the previously entered numbers and display it on the console.
+    /// </summary>
+    class Excersice492
+    {
+
+        static void Main(string[] args)
+        {
+            var sum = 0;
+            while (true)
+            {
+                Console.WriteLine("Enter a number\n if you want to stop enter 'ok'");
+                var input = Console.ReadLine();
+                if (input.ToLower() == "ok")
+                    break;
+                sum += Convert.ToInt32(input);
+            }
+
+            Console.WriteLine("this is the total sum = {0}", sum);
+
+            Console.ReadLine();
+        }
+
+
+       
+
+
+    }
+
+    /// <summary>
+    /// Write a program that picks a random number between 1 and 10. Give the user 4 chances to guess the number. 
+    /// If the user guesses the number, display “You won". Otherwise, display “You lost".
+    /// </summary>
+
+    class Excersice493
+    {
+
+        static void Main(string[] args)
+        {
+            var input = Convert.ToInt32(Console.ReadLine());
+
+            var fact = 1;
+
+            for (int i = 1; i <= input; i++)
+            {
+                fact *= i;
+
+            }
+
+            Console.WriteLine("this is the total sum = {0}", fact);
+            Console.ReadLine();
+        }
+
+    }
+
+    /// <summary>
+    /// Write a program that picks a random number between 1 and 10. Give the user 4 chances to guess the number. 
+    /// If the user guesses the number, display “You won". Otherwise, display “You lost".
+    /// </summary>
+    class Excersice494
+    {
+
+        static void Main(string[] args)
+        {
+         
+            var random = new Random();
+            var number = random.Next(1, 10);
+
+
+                for (int i = 1; i <= 4; i++)
+                {
+
+                    Console.WriteLine("Enter a number, you have 4 chances");
+                    Console.WriteLine("secret is " + number);
+                    var input = Convert.ToInt32(Console.ReadLine());
+
+                if (input == number)
+                    {
+                        Console.WriteLine("you won");
+                        return;
+                    }
+
+                    Console.WriteLine("try again");
+                }
+            Console.WriteLine("lost");
+            Console.ReadLine();
+        }
+
+          
+   }
+
+    /// <summary>
+    /// Write a program and ask the user to enter a series of numbers separated by comma. Find the maximum of the 
+    /// numbers and display it on the result. For example, if the user enters “5, 3, 8, 1, 4", the program should 
+    /// display 8 on the console.
+    /// </summary>
+
+
+    class Excersice495
+    {
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter numbers seperate by ,");
+            var input = Console.ReadLine();
+            var numbers = input.Split(',');
+            //we assume first number is the max
+
+            var max = Convert.ToInt32(numbers[0]);
+            
+            foreach (var str in numbers)
+            {
+                var number = Convert.ToInt32(str);
+                if (number > max)
+                {
+                    max = number;
+                }
+            }
+            Console.WriteLine("max number is "+max);
+            Console.ReadLine();
+        }
+
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+} 
+
 
 
 
