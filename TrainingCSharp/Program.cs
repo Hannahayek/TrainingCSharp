@@ -686,18 +686,23 @@ c:\folder1\folder3";
             Console.WriteLine("enter numbers seperate by ,");
             var input = Console.ReadLine();
             var numbers = input.Split(',');
-            //we assume first number is the max
+            
+            //lets assume first number is a max
 
             var max = Convert.ToInt32(numbers[0]);
-            
-            foreach (var str in numbers)
+
+            foreach (var ste in numbers)
             {
-                var number = Convert.ToInt32(str);
+                var number = Convert.ToInt32(ste);
                 if (number > max)
                 {
                     max = number;
                 }
+
+
             }
+
+
             Console.WriteLine("max number is "+max);
             Console.ReadLine();
         }
@@ -707,7 +712,71 @@ c:\folder1\folder3";
 
 
 
+    class DemoArrays55
+    {
 
+        static void Main(string[] args)
+        {
+            var numbers = new[] {1, 8, 4, 9, 6, 7};
+           
+
+
+            //length
+            Console.WriteLine("length "+numbers.Length);
+
+            //indexof
+
+            var number = Array.IndexOf(numbers, 4);
+            Console.WriteLine("index of 4 ="+number);
+
+            //clear
+            //0 starting index 2 length of elements
+            Array.Clear(numbers,0,2);
+            Console.WriteLine("Effects of clear");
+            foreach (var str in numbers)
+            {
+                Console.WriteLine(str);
+            }
+
+            //copy
+            var another = new int[3];
+
+           Array.Copy(numbers,another,3);
+            Console.WriteLine("Effects of copy");
+            foreach (var str in another)
+            {
+                Console.WriteLine(str);
+            }
+
+            //sort method
+
+            Array.Sort(numbers);
+          
+            Console.WriteLine("Effects of sort");
+            foreach (var str in numbers)
+            {
+                Console.WriteLine(str);
+            }
+
+            //reverse method
+
+            Array.Reverse(numbers);
+
+            Console.WriteLine("Effects of reverse");
+            foreach (var str in numbers)
+            {
+                Console.WriteLine(str);
+            }
+
+
+
+
+
+            Console.ReadLine();
+        }
+
+
+    }
 
 
 
