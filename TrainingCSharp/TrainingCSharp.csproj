@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TrainingCSharp.DemoArrays55</StartupObject>
+    <StartupObject>TrainingCSharp.Exercises555</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
