@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TrainingCSharp.Exercises555</StartupObject>
+    <StartupObject>TrainingCSharp.DateTime59</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
