@@ -546,12 +546,12 @@ c:\folder1\folder3";
 
         static void Main(string[] args)
         {
-            var dateTime=new DateTime(2015,1,1);
+            var dateTime = new DateTime(2015, 1, 1);
             var now = DateTime.Now;
             var today = DateTime.Today;
 
 
-            Console.WriteLine("Hours: "+now.Hour);
+            Console.WriteLine("Hours: " + now.Hour);
             Console.WriteLine("Minute: " + now.Minute);
 
             var tomorrow = now.AddDays(1);
@@ -568,11 +568,44 @@ c:\folder1\folder3";
 
 
             Console.ReadLine();
-            
+
         }
 
-
     }
+
+    class TimeSpan60
+        {
+
+            static void Main(string[] args)
+            {
+               var timeSpan=new TimeSpan(1,2,3);
+                var timeSpan1 = TimeSpan.FromHours(1);
+                var end = DateTime.Now.AddMinutes(2);
+
+                var start = DateTime.Now;
+
+                var duration = end - start;
+                Console.WriteLine("Duartion "+duration);
+            //proporties
+                Console.WriteLine(" Total Minutes :"+timeSpan.TotalMinutes);
+                Console.WriteLine("Minutes :" + timeSpan.Minutes);
+
+            //add  
+                Console.WriteLine("Add Example "+ timeSpan.Add(TimeSpan.FromMinutes(8)));
+                //subtract
+                Console.WriteLine("Subtract Example " + timeSpan.Subtract(TimeSpan.FromMinutes(8)));
+
+
+                //tostring
+                Console.WriteLine("To String" +timeSpan.ToString());
+
+                //conversion from string
+
+                Console.WriteLine("conversion from string"+ TimeSpan.Parse("01:02:03"));
+            Console.ReadLine();
+               
+            }
+        }
 
 
 
