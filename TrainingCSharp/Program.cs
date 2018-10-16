@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Globalization;
 using System.Runtime.InteropServices;
+using System.Text;
 using System.Threading;
 using TrainingCSharp.Math;
 
@@ -678,7 +679,35 @@ c:\folder1\folder3";
 
 
 
+    class StringBuilder67
+    {
 
+        static void Main(string[] args)
+        {
+            var builder = new StringBuilder();
+
+            builder //can be done in this way also
+                 .Append('-', 10)
+                 .AppendLine()
+                 .Append("Header")
+                 .AppendLine();
+            builder.Append('-', 10);
+            Console.WriteLine(builder);
+            builder.Replace('-', '+');
+            Console.WriteLine(builder);
+            builder.Remove(0, 10);
+            Console.WriteLine(builder);
+            builder.Insert(0, new string('-', 10));
+            Console.WriteLine(builder);
+            Console.WriteLine("first charcter"+builder[0]);
+            Console.ReadLine();
+
+
+        }
+
+
+
+    }
 
 
 
