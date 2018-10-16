@@ -656,7 +656,25 @@ c:\folder1\folder3";
 
 
 
+    class SummarisingText65
+    {
 
+        static void Main(string[] args)
+        {
+            var sentence = "this is going to be a really really rellay really really long text";
+
+          
+
+            var summary =StringUtility.SummarizeText(sentence,25);
+            Console.WriteLine(summary);
+            Console.ReadLine();
+
+
+        }
+                                          
+
+
+    }
 
 
 
