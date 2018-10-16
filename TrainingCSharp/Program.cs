@@ -608,7 +608,51 @@ c:\folder1\folder3";
         }
 
 
+    class DemoString61
+    {
 
+        static void Main(string[] args)
+        {
+            var fullname = "Hanna Hayek ";
+            Console.WriteLine("Trim '{0}'",fullname.Trim());
+            Console.WriteLine("To Upper '{0}'", fullname.Trim().ToUpper());
+            Console.WriteLine("To Lower '{0}'", fullname.Trim().ToLower());
+
+            var index = fullname.IndexOf(' '); //get index of the space
+            var firstname = fullname.Substring(0,index);
+            var secondname = fullname.Substring(index + 1); //from index +1 to the end
+            Console.WriteLine("first name "+firstname);
+            Console.WriteLine("second name " + secondname);
+
+            //we can split also in this way, it will save it in array
+
+            var names = fullname.Split(' ');
+            Console.WriteLine("first name " + names[0]);
+            Console.WriteLine("second name " + names[1]);
+
+            Console.WriteLine(fullname.Replace("Hanna", "batal"));
+            ////to remove the trim white space
+            //if(String.IsNullOrEmpty(" ".Trim()))
+            //    Console.WriteLine("invalid");
+            //above method replaced with 
+            if (String.IsNullOrWhiteSpace(" "))
+                Console.WriteLine("invalid");
+
+            var str = "25";
+
+            
+            var age = Convert.ToByte(str);
+            Console.WriteLine("age is "+ age);
+
+            var price = 29.95f;
+
+            Console.WriteLine("Price converted "+price.ToString("C"));
+
+            Console.ReadLine();
+
+        }
+       
+    }
 
 
 
