@@ -578,24 +578,31 @@ namespace TraininCsharpExcersices
             foreach (var number in input.Split('-'))
                 numbers.Add(Convert.ToInt32(number));
 
-            numbers.Sort();
 
+            IsConsecutiveList(numbers);
 
-            var consecutive = true;
-
-            for (int i = 1; i < numbers.Count; i++)
-            {
-                if (numbers[i] != numbers[i - 1] + 1)
-                    consecutive = false;
-                break;
-
-            }
-
-            var massage = consecutive ? "consecutive" : "notconsecutive";
+            var massage = IsConsecutiveList(numbers) ? "consecutive" : "notconsecutive";
             Console.WriteLine(massage);
             Console.ReadLine();
         }
 
+        public static bool IsConsecutiveList(List<int> list)
+        {
+            // Note that I've copied the list to a new array because I didn't want callign Sort()
+            // impact the argument of this method. Caller of this method only expects a true/false answer 
+            // as a result of this call. So, this method should not have a side-effect.
+            var numbers = new int[list.Count];
+            list.CopyTo(numbers);
+            Array.Sort(numbers);
+
+            for (var i = 1; i < numbers.Length; i++)
+            {
+                if (numbers[i] != numbers[i - 1] + 1)
+                    return false;
+            }
+
+            return true;
+        }
 
     }
 

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TrainingCSharp.StringBuilder67</StartupObject>
+    <StartupObject>TrainingCSharp.DemoString61</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

@@ -621,10 +621,11 @@ c:\folder1\folder3";
 
             var index = fullname.IndexOf(' '); //get index of the space
             var firstname = fullname.Substring(0,index);
+            var firstname1 = fullname.Substring(1);
             var secondname = fullname.Substring(index + 1); //from index +1 to the end
             Console.WriteLine("first name "+firstname);
             Console.WriteLine("second name " + secondname);
-
+            Console.WriteLine("first name substring " + firstname1);
             //we can split also in this way, it will save it in array
 
             var names = fullname.Split(' ');
