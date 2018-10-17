@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -771,10 +772,38 @@ namespace TraininCsharpExcersices
 
 
 
+    class Lecture761
+    {
+
+        static void Main(string[] args)
+        {
+            var contents = File.ReadAllText(@"d:\hanna.txt");
+            var words = contents.Split(' ');
+          
+            Console.WriteLine(words.Length);
+            Console.ReadLine();
+        }
+    }
 
 
+    class Lecture762
+    {
 
+        static void Main(string[] args)
+        {
+            var contents = File.ReadAllText(@"d:\hanna.txt");
+            var words = contents.Split(' ');
 
+            var longest = words[0];
+           foreach(var word in words)
+            {
+                if (word.Length > longest.Length)
+                    longest = word;
+            }
+            Console.WriteLine("longest word is  "+longest);
+            Console.ReadLine();
+        }
+    }
 
 
 

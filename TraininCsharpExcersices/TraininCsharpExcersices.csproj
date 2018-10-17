@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TraininCsharpExcersices.Exercises683</StartupObject>
+    <StartupObject>TraininCsharpExcersices.Lecture762</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
