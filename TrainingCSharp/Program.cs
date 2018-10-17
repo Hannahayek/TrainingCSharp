@@ -3,6 +3,7 @@ using System.CodeDom;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Globalization;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
@@ -711,7 +712,41 @@ c:\folder1\folder3";
     }
 
 
+    class DemoFileandFileInfo73
+    {/// <summary>
+    /// file provides static methods //fileinfo provides instances method
+    /// </summary>
+    /// <param name="args"></param>
 
+        static void Main(string[] args)
+        {
+            var path = @"c:\somefile.jpg";         
+            
+            //true to overrride 
+            File.Copy(@"C:\temp\mypic.jpg", @"d:\temp\mypic", true);
+            File.Delete(path);
+
+            if(File.Exists(path))
+            {
+
+            }
+
+            var content = File.ReadAllText(path);
+            var fileinfo = new FileInfo(path);
+
+            fileinfo.CopyTo("destination");
+            fileinfo.Delete();
+
+            if (fileinfo.Exists)
+            {
+                ////
+            }
+
+        }
+
+
+
+    }
 
 
 
