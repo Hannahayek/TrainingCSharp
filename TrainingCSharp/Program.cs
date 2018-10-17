@@ -773,6 +773,28 @@ c:\folder1\folder3";
         }
 
     }
+
+
+
+
+    class DemoPath75
+    {
+
+        static void Main(string[] args)
+        {
+            var path = @"C:\Users\v-hahaye\source\repos\TrainingCSharp\TrainingCSharp.sln";
+            var dotIndex = path.IndexOf('.');
+            var extension = path.Substring(dotIndex);
+
+            Console.WriteLine("String way "+extension);
+            Console.WriteLine("Path static method way "+Path.GetExtension(path));
+            Console.WriteLine("FileName: "+Path.GetFileName(path));
+            Console.WriteLine("FileName: without extenstion " + Path.GetFileNameWithoutExtension(path));
+            Console.WriteLine("Get Directory " + Path.GetDirectoryName(path));
+            Console.ReadLine();
+        }
+
+    }
 }
 
 
