@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingCSharp", "TrainingC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraininCsharpExcersices", "TraininCsharpExcersices\TraininCsharpExcersices.csproj", "{B9C1DB85-2F82-4095-A373-841FB3480227}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpFundamentals", "..\..\..\Downloads\Compressed\Debugging\CSharpFundamentals\CSharpFundamentals\CSharpFundamentals.csproj", "{6B217579-3AB5-4BDF-AC3B-F87EB8F99A3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpFundamentals", "CSharpFundamentals\CSharpFundamentals\CSharpFundamentals.csproj", "{6B217579-3AB5-4BDF-AC3B-F87EB8F99A3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
