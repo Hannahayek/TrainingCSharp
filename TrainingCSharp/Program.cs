@@ -716,7 +716,7 @@ c:\folder1\folder3";
     {/// <summary>
     /// file provides static methods //fileinfo provides instances method
     /// </summary>
-    /// <param name="args"></param>
+  
 
         static void Main(string[] args)
         {
@@ -749,9 +749,30 @@ c:\folder1\folder3";
     }
 
 
+    class DemoDirectoryandDirectoryInfo74
+    {
+
+        static void Main(string[] args)
+        {
+        //    Directory.CreateDirectory(@"c:\hanna");
 
 
+            //"*.sln" to filter search we can get all files with .sln
+            var files = Directory.GetFiles(@"C:\Users\v-hahaye\source\repos\TrainingCSharp", "*.*", SearchOption.AllDirectories);
+            foreach(var file in files)
+            {
+                Console.WriteLine(file);
+            }
 
+
+            var directoryInfo = new DirectoryInfo("");
+            directoryInfo.GetFiles();
+            directoryInfo.GetDirectories();
+
+            Console.ReadLine();
+        }
+
+    }
 }
 
 

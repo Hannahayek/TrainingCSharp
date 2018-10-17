@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TrainingCSharp.DemoString61</StartupObject>
+    <StartupObject>TrainingCSharp.DemoDirectoryandDirectoryInfo74</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
