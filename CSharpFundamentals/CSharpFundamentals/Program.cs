@@ -16,7 +16,16 @@ namespace CSharpFundamentals
         }
 
         public static List<int> GetSmallests(List<int> list, int count)
-        {       var  buffer=new List<int>(list);  //we add new list so not to remove from ogriginal passed one
+
+        {
+            if(list ==null)
+                throw new ArgumentNullException("list");
+
+            if (count > list.Count)
+            throw new ArgumentOutOfRangeException("count", "count should be 1 and number of elements in this list");
+          
+
+            var  buffer=new List<int>(list);  //we addc new list so not to remove from ogriginal passed one
             var smallests = new List<int>();
 
             while (smallests.Count < count)
