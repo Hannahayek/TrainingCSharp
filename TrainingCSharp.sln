@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cshap Beginners", "Cshap Be
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Csharp-Intermediate", "Csharp-Intermediate", "{9C791C41-7616-4E5D-959E-AFEC6AF1383E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section 1", "Section 1", "{DFFA0828-7277-4E48-92E9-1FE9A22BBF0C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section 2", "Section 2", "{DFFA0828-7277-4E48-92E9-1FE9A22BBF0C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{99709C7A-147C-413C-B39F-60FB8CA9A630}"
 EndProject
