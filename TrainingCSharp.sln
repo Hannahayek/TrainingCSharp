@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section 2", "Section 2", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{99709C7A-147C-413C-B39F-60FB8CA9A630}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosntructoers", "Cosntructoers\Cosntructoers.csproj", "{71B4025D-03B8-49CE-B16A-2FDE9981466E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{99709C7A-147C-413C-B39F-60FB8CA9A630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99709C7A-147C-413C-B39F-60FB8CA9A630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99709C7A-147C-413C-B39F-60FB8CA9A630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B4025D-03B8-49CE-B16A-2FDE9981466E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B4025D-03B8-49CE-B16A-2FDE9981466E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B4025D-03B8-49CE-B16A-2FDE9981466E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B4025D-03B8-49CE-B16A-2FDE9981466E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{6B217579-3AB5-4BDF-AC3B-F87EB8F99A3C} = {BE8A3564-EF98-42AF-914D-8801F71EF143}
 		{DFFA0828-7277-4E48-92E9-1FE9A22BBF0C} = {9C791C41-7616-4E5D-959E-AFEC6AF1383E}
 		{99709C7A-147C-413C-B39F-60FB8CA9A630} = {DFFA0828-7277-4E48-92E9-1FE9A22BBF0C}
+		{71B4025D-03B8-49CE-B16A-2FDE9981466E} = {DFFA0828-7277-4E48-92E9-1FE9A22BBF0C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F40CF1F-12AB-40EC-8816-667D58AEABCC}
