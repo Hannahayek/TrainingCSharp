@@ -55,6 +55,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DownCasting-Upcasting", "Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{5381E02F-4D9F-4F59-B777-864589901FD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxing and Unboxing", "Boxing and Unboxing\Boxing and Unboxing.csproj", "{911021EE-DBD3-4669-96BA-65ACE4994979}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,10 @@ Global
 		{5381E02F-4D9F-4F59-B777-864589901FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5381E02F-4D9F-4F59-B777-864589901FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5381E02F-4D9F-4F59-B777-864589901FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911021EE-DBD3-4669-96BA-65ACE4994979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911021EE-DBD3-4669-96BA-65ACE4994979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911021EE-DBD3-4669-96BA-65ACE4994979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911021EE-DBD3-4669-96BA-65ACE4994979}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -166,6 +172,7 @@ Global
 		{1BB83126-4F33-4BF3-A683-878234643D74} = {7FBE1386-576C-4220-A93B-5B7DF4339769}
 		{7FBE1386-576C-4220-A93B-5B7DF4339769} = {1FE0C905-6546-46FF-8BED-5CB7427DA8CD}
 		{5381E02F-4D9F-4F59-B777-864589901FD2} = {7FBE1386-576C-4220-A93B-5B7DF4339769}
+		{911021EE-DBD3-4669-96BA-65ACE4994979} = {1FE0C905-6546-46FF-8BED-5CB7427DA8CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F40CF1F-12AB-40EC-8816-667D58AEABCC}
