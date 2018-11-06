@@ -12,19 +12,8 @@ namespace MethodOverriding
         public void DrawShapes(List<Shape> shapes)
         {
             foreach (var shape in shapes )
-            {
-                switch (shape.Type)
-                {
-
-                    case ShapeType.Circle:
-                        Console.WriteLine("draw a circle");
-                        break;
-
-                    case ShapeType.Rectangle:
-                        Console.WriteLine("draw rectangle");
-                        break;
- 
-                }
+            {//will user draw from rectancle or circle depends on the shape
+              shape.Draw();
             }
 
         }
