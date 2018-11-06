@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace AbstractClasses
 {
-    public class Rectangle : Shape
-    {
-
-
-    }
-    
     class Program
-    {
+    {//in general abstract will force the implementation for override main class method 
+        //in case not added the override method, they program will not compile
         static void Main(string[] args)
-        {
+        {   // we cant initiate the main abstract class when using abstract,can be used as common behaviour
+           // var shape = new Shape();
+
+
 
             var circle=new Circle();
             circle.Draw();
