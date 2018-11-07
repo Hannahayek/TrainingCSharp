@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodOverriding", "MethodO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClasses", "AbstractClasses\AbstractClasses.csproj", "{5238E9B5-7ED7-4B58-B8C4-508F8365E6EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section5_Excersise1", "Section5_Excersise1\Section5_Excersise1.csproj", "{801EC185-E859-45B8-9C61-2497016E1ACF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +165,10 @@ Global
 		{5238E9B5-7ED7-4B58-B8C4-508F8365E6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5238E9B5-7ED7-4B58-B8C4-508F8365E6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5238E9B5-7ED7-4B58-B8C4-508F8365E6EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{801EC185-E859-45B8-9C61-2497016E1ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801EC185-E859-45B8-9C61-2497016E1ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801EC185-E859-45B8-9C61-2497016E1ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801EC185-E859-45B8-9C61-2497016E1ACF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -197,6 +203,7 @@ Global
 		{6484C734-C802-40E9-ACBF-0D2B3A592024} = {9C791C41-7616-4E5D-959E-AFEC6AF1383E}
 		{BB3F278E-B505-43E2-AE0B-52FF292C88FB} = {6484C734-C802-40E9-ACBF-0D2B3A592024}
 		{5238E9B5-7ED7-4B58-B8C4-508F8365E6EB} = {6484C734-C802-40E9-ACBF-0D2B3A592024}
+		{801EC185-E859-45B8-9C61-2497016E1ACF} = {6484C734-C802-40E9-ACBF-0D2B3A592024}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F40CF1F-12AB-40EC-8816-667D58AEABCC}
