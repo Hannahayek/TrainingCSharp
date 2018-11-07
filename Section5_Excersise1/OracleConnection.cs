@@ -14,8 +14,8 @@ namespace Section5_Excersise1
 
         public override void Openconnection()
         {
-            if(_timeout>TimeSpan.FromSeconds(40))
-               throw new TimeoutException("oracle connection timeout");
+            if (_startTime.Second >= _timeOut.Seconds)
+                throw new TimeoutException("oracle connection timeout");
 
             else
             Console.WriteLine("oracle connection opened");

@@ -8,12 +8,13 @@ namespace Section5_Excersise1
 {
    public abstract class DbConnection
     {
-        public String _connection { get; set; }
-        public readonly TimeSpan _timeout = TimeSpan.FromSeconds(40);
+        public string _connection { get; private set; }
+        public readonly TimeSpan _timeOut = TimeSpan.FromSeconds(40);
+        public DateTime _startTime { get; set; }
 
-        public DbConnection(String conn)
+        public DbConnection(string conn)
         {
-            this._connection = conn;
+            _connection = conn;
             if (String.IsNullOrWhiteSpace(conn))
                 throw new ArgumentNullException("connections is null");
         }
