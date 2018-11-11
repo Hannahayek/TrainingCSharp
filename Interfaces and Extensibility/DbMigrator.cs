@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Interfaces_and_Extensibility
 {
-   public class DbMigrator
+
+
+
+   
+    public class DbMigrator
     {
         private readonly ILogger _logger;
         public DbMigrator(ILogger logger)
@@ -15,7 +19,9 @@ namespace Interfaces_and_Extensibility
         }
         public void Migrate()
         {
-            Console.WriteLine("migrations started at {0}",DateTime.Now);
+            _logger.LogInfo("migrations started at {0}"+ DateTime.Now);
+
+            _logger.LogInfo("migrations finished at {0}" + DateTime.Now);
             //detauls of migrating the database
         }
 
