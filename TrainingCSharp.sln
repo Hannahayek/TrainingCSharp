@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesandTestability", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesandTestability.UnitTests", "InterfacesandTestability.UnitTests\InterfacesandTestability.UnitTests.csproj", "{BA528706-BE34-436F-A41D-A71B0C45BF7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces and Extensibility", "Interfaces and Extensibility\Interfaces and Extensibility.csproj", "{540202D5-B6CC-4769-856F-8CE132EF860D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{BA528706-BE34-436F-A41D-A71B0C45BF7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA528706-BE34-436F-A41D-A71B0C45BF7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA528706-BE34-436F-A41D-A71B0C45BF7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{540202D5-B6CC-4769-856F-8CE132EF860D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{540202D5-B6CC-4769-856F-8CE132EF860D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{540202D5-B6CC-4769-856F-8CE132EF860D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{540202D5-B6CC-4769-856F-8CE132EF860D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -221,6 +227,7 @@ Global
 		{E2213E49-78A1-41E9-8847-B6852B2627D3} = {9C791C41-7616-4E5D-959E-AFEC6AF1383E}
 		{A90E4866-6DCB-4AEE-92E9-642B2502D829} = {E2213E49-78A1-41E9-8847-B6852B2627D3}
 		{BA528706-BE34-436F-A41D-A71B0C45BF7F} = {E2213E49-78A1-41E9-8847-B6852B2627D3}
+		{540202D5-B6CC-4769-856F-8CE132EF860D} = {E2213E49-78A1-41E9-8847-B6852B2627D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F40CF1F-12AB-40EC-8816-667D58AEABCC}
