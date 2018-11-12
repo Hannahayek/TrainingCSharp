@@ -71,9 +71,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "section 6", "section 6", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesandTestability", "InterfacesandTestability\InterfacesandTestability.csproj", "{A90E4866-6DCB-4AEE-92E9-642B2502D829}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesandTestability.UnitTests", "InterfacesandTestability.UnitTests\InterfacesandTestability.UnitTests.csproj", "{BA528706-BE34-436F-A41D-A71B0C45BF7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfacesandTestability.UnitTests", "InterfacesandTestability.UnitTests\InterfacesandTestability.UnitTests.csproj", "{BA528706-BE34-436F-A41D-A71B0C45BF7F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces and Extensibility", "Interfaces and Extensibility\Interfaces and Extensibility.csproj", "{540202D5-B6CC-4769-856F-8CE132EF860D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces and Polymorphism", "Interfaces and Polymorphism\Interfaces and Polymorphism.csproj", "{ED001B8E-A250-43C9-975A-080837C592F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,6 +191,10 @@ Global
 		{540202D5-B6CC-4769-856F-8CE132EF860D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{540202D5-B6CC-4769-856F-8CE132EF860D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{540202D5-B6CC-4769-856F-8CE132EF860D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED001B8E-A250-43C9-975A-080837C592F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED001B8E-A250-43C9-975A-080837C592F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED001B8E-A250-43C9-975A-080837C592F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED001B8E-A250-43C9-975A-080837C592F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -228,6 +234,7 @@ Global
 		{A90E4866-6DCB-4AEE-92E9-642B2502D829} = {E2213E49-78A1-41E9-8847-B6852B2627D3}
 		{BA528706-BE34-436F-A41D-A71B0C45BF7F} = {E2213E49-78A1-41E9-8847-B6852B2627D3}
 		{540202D5-B6CC-4769-856F-8CE132EF860D} = {E2213E49-78A1-41E9-8847-B6852B2627D3}
+		{ED001B8E-A250-43C9-975A-080837C592F6} = {E2213E49-78A1-41E9-8847-B6852B2627D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F40CF1F-12AB-40EC-8816-667D58AEABCC}
