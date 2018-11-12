@@ -11,6 +11,8 @@ namespace Interfaces_and_Polymorphism
         static void Main(string[] args)
         {
             var encoder = new VideoEncoder();
+            encoder.RegisterNotificationChannel(new SMSNotificationChannel());
+            encoder.RegisterNotificationChannel(new MailNotificationChannel());
             encoder.Encode(new Video());
             Console.ReadLine();
         }
