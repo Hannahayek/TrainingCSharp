@@ -10,7 +10,7 @@ namespace Excersices
     {
         private DateTime _startTime;
         private DateTime _endTime;
-        private bool _isRunning = false;
+        private bool _isRunning ;//by default initilized false
 
        public void Start()
         {
