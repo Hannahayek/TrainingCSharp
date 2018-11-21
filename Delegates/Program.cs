@@ -6,24 +6,23 @@ using System.Threading.Tasks;
 
 namespace Delegates
 {
-
-    public class PhotoProcessor
-    {
-        public void Process(string path)
-        {
-            var photo = Photo.load(path);
-            var filters=new PhotoFilters();
-            filters.ApplyBrightness(photo);
-            filters.ApplyContrast(photo);
-            filters.Resize(photo);
-            photo.Save();
-
-        }
-    }
     class Program
     {
         static void Main(string[] args)
         {
+            var proccessor=new PhotoProcessor();
+            var filters=new PhotoFilters();
+            PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyBrightness;
+            filterHandler += filters.ApplyContrast;
+            //so we can add and method later and add it to delegate 
+            filterHandler += RemoveRedEyeFilter;
+            proccessor.Process("photo.jpg",filterHandler);
+            Console.ReadLine();
+        }
+
+        static void RemoveRedEyeFilter(Photo photo)
+        {
+            Console.WriteLine("apply red eye filter");
         }
     }
 }
