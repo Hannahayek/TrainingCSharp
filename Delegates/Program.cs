@@ -12,7 +12,7 @@ namespace Delegates
         {
             var proccessor=new PhotoProcessor();
             var filters=new PhotoFilters();
-            PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyBrightness;
+           Action<Photo> filterHandler = filters.ApplyBrightness;
             filterHandler += filters.ApplyContrast;
             //so we can add and method later and add it to delegate 
             filterHandler += RemoveRedEyeFilter;
