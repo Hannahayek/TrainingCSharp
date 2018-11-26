@@ -9,9 +9,9 @@ namespace EventsAndDelegates
     public class MessageService
     {
 
-        public void OnVideoEncoded(object source,EventArgs args)
+        public void OnVideoEncoded(object source,VideoEventsArgs args)
         {
-            Console.WriteLine("Message Service : sending Text massage");
+            Console.WriteLine("Message Service : sending Text massage "+args.Video.Title);
         }
     }
 }
